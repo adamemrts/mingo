@@ -155,7 +155,7 @@ export class Iterator {
         if (o.done) throw DONE;
         return o.value;
       };
-    } else if (source instanceof Array) {
+    } else if (Array.isArray(source)) {
       const data = source;
       const size = data.length;
       let index = 0;
